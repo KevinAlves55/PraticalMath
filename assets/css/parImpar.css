@@ -1,0 +1,128 @@
+* {
+    outline: none;
+}
+
+:root {
+    --CorDestaque: rgb(240, 132, 32);
+    --Black: rgba(0, 0, 0, 0.856);
+    --White: #fff;
+}
+
+body {
+    color: white;
+}
+
+#container-form {
+	height: 610px;
+	width: 545px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.712);
+	border-radius: 10px;
+	gap: 35px;
+}
+
+#container-form h3 {
+	font-size: 1.8rem;
+	margin-top: 15px;
+	font-weight: 400;
+	border-bottom: 3px solid var(--White);
+	color: var(--CorDestaque);
+}
+
+#choice-button {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.box {
+	display: flex;
+	gap: 15px;
+}
+
+.box label {
+	color: var(--White);
+	font-size: 1.2rem;
+	font-weight: 200;
+}
+
+#button input {
+	height: 40px;
+	width: 125px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--CorDestaque);
+	font-weight: 500;
+	font-size: 1.1rem;
+	border: 1px solid var(--CorDestaque);
+	border-radius: 3px;
+	text-transform: capitalize;
+	transition: 0.5s;
+    position: relative;
+    left: 335px;
+    top: -75px;
+}
+
+#button input:hover {
+	background-color: rgb(250, 162, 81);
+	border: 1px solid rgb(250, 162, 81);
+	background-blend-mode: lighten;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.block {
+    display: block;
+}
+
+.pairs-odd h4 {
+    display: flex;
+    justify-content: center;
+    color: var(--White);
+	font-size: 1.2rem;
+	font-weight: 200;
+    margin-bottom: 15px;
+}
+
+#result {
+    margin-top: -35px;
+    display: flex;
+    flex-direction: row;
+    gap: 75px;
+}
+
+.box-pairs-odd {
+    height: 250px;
+    width: 210px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+    color: var(--CorDestaque);
+    border: 2px inset white;
+    border-radius: 3px;
+    /* 
+    
+        A propriedade overflow: ; serve para adicionar uma bara de rolagem ao uma caixa
+    
+    */
+}
+
+.destaque {
+    display: block;
+    margin-top: 20px;
+}
+
+#mensagem {
+    height: 70px;
+    width: 500px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    font-size: 1.2rem;
+}

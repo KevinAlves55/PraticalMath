@@ -1,0 +1,110 @@
+:root {
+    --CorDestaque: rgb(240, 132, 32);
+    --Black: rgba(0, 0, 0, 0.856);
+    --White: #fff;
+}
+
+#container-form {
+	height: 600px;
+	width: 530px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.712);
+	border-radius: 10px;
+	gap: 25px;
+}
+
+#container-form h3 {
+	font-size: 1.8rem;
+	margin-top: 25px;
+	font-weight: 400;
+	border-bottom: 3px solid var(--White);
+	color: var(--CorDestaque);
+    margin-bottom: 15px;
+}
+
+form {
+    height: inherit;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#choice-button {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.box {
+    display: flex;
+	gap: 15px;
+}
+
+.box label {
+	color: var(--White);
+	font-size: 1.2rem;
+	font-weight: 200;
+}
+
+.box input {
+	width: 95px;
+	height: 25px;
+	outline: none;
+	text-align: center;
+	line-height: 25px;
+	vertical-align: middle;
+	padding: 8px;
+	font-size: 1rem;
+	background-color: rgba(255, 255, 255, 0.856);
+	border: none;
+	border-radius: 3px;
+	font-weight: 200;
+}
+
+#button {
+	display: flex;
+	justify-content: center;
+}
+
+#button input {
+	height: 40px;
+	width: 125px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--CorDestaque);
+	font-weight: 500;
+	font-size: 1.1rem;
+	border: 1px solid var(--CorDestaque);
+	border-radius: 3px;
+	text-transform: capitalize;
+	transition: 0.5s;
+}
+
+#button input:hover {
+	background-color: rgb(250, 162, 81);
+	border: 1px solid rgb(250, 162, 81);
+	background-blend-mode: lighten;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+#result {
+    display: flex;
+    margin-top: 20px;
+    height: 310px;
+    width: 285px;
+    color: var(--CorDestaque);
+    border-radius: 5px;
+    overflow: auto;
+    font-size: 1.2rem;
+    justify-content: center;
+    box-shadow: 0 0 0 30 black;
+}
+
+.block {
+    display: block;
+}
